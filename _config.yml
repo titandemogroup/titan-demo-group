@@ -1,15 +1,11 @@
-title: Titan Demo Group
-description: Residential demolition services in Nevada
-url: "https://titandemogroup.com"
-baseurl: ""
-
-theme: minimal-mistakes-jekyll
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-include-cache
-
 collections:
   pages:
     output: true
     permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
