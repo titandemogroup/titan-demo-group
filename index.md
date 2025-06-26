@@ -1,15 +1,8 @@
-
 ---
 layout: home
-author_profile: true
 title: Welcome to Titan Demo Group
-header:
-  overlay_image: /assets/images/demo-header.jpg
-  overlay_filter: 0.3
-  caption: "Residential demolition. Fast. Clean. Reliable."
-excerpt: "We help homeowners tackle demolition projects with confidence and precision."
+author_profile: true
 ---
 
-## About Us
-
-Titan Demo Group specializes in residential demolition for remodels, renovations, and property cleanups. Based in Henderson, NV, we’re fast, affordable, and professional.
+Welcome to the official website for **Titan Demo Group** – your trusted residential demolition team in Nevada.  
+We specialize in safe, efficient demo for homeowners taking on major DIY projects.
