@@ -1,9 +1,15 @@
+
 title: Titan Demo Group
-email: contact@titandemogroup.com
+logo: /assets/images/tdg-logo.png
 description: >-
-  Residential Interior Demolition in Nevada. 
-baseurl: ""
+  Crushing Barriers, Building Futures. Titan Demo Group offers residential demolition services in Las Vegas and Henderson.
 url: "https://titandemogroup.com"
-theme: minima
+baseurl: ""
+repository: ""
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+minimal_mistakes_skin: "default"
+name: Titan Demo Group
+locale: en-US
