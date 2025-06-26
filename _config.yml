@@ -1,27 +1,20 @@
-
 title: Titan Demo Group
-email: fmoreno@titandemogroup.com
-description: >-
-  Residential demolition experts serving Henderson and the Las Vegas Valley.
-baseurl: ""
+description: Residential demolition made easy for homeowners
 url: "https://titandemogroup.com"
+baseurl: ""
+
 theme: minimal-mistakes-jekyll
 
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
   - jekyll-include-cache
+  - jekyll-seo-tag
+
+markdown: kramdown
+highlighter: rouge
 
 defaults:
   - scope:
       path: ""
-      type: posts
     values:
       layout: single
       author_profile: true
-
-paginate: 5
-paginate_path: /page:num/
-markdown: kramdown
-highlighter: rouge
