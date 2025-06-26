@@ -1,0 +1,15 @@
+
+title: Titan Demo Group
+logo: /assets/images/tdg-logo.png
+description: >-
+  Crushing Barriers, Building Futures. Titan Demo Group offers residential demolition services in Las Vegas and Henderson.
+url: "https://titandemogroup.com"
+baseurl: ""
+repository: ""
+theme: minimal-mistakes-jekyll
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+minimal_mistakes_skin: "default"
+name: Titan Demo Group
+locale: en-US
