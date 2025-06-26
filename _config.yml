@@ -1,0 +1,9 @@
+title: Titan Demo Group
+email: contact@titandemogroup.com
+description: >-
+  Residential Interior Demolition in Nevada. 
+baseurl: ""
+url: "https://titandemogroup.com"
+theme: minima
+plugins:
+  - jekyll-feed
