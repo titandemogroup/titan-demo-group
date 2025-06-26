@@ -2,81 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Titan Demo Group</title>
-  <link rel="stylesheet" href="/assets/styles.css" />
+  <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header style="background-image: url('/assets/demo-header.jpg'); background-size: cover; background-position: center; height: 600px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 40px; color: #ff6600;">
-    <img src="/assets/tdg-logo.png" alt="TDG Logo" style="height: 60px; margin-bottom: 20px;">
-    <h1 style="font-size: 2.5em; max-width: 600px; line-height: 1.2;">CRUSHING BARRIERS,<br>BUILDING FUTURES.</h1>
-    <a href="https://form.jotform.com/251748102089054" target="_blank" style="background-color: white; color: black; padding: 12px 20px; margin-top: 20px; font-weight: bold; text-decoration: none; border-radius: 4px;">FREE ESTIMATES</a>
+  <!-- HEADER -->
+  <header class="hero">
+    <img src="/assets/tdg-logo.png" alt="TDG Logo" class="logo">
+    <h1><span>CRUSHING BARRIERS,</span><br><span>BUILDING FUTURES.</span></h1>
+    <a href="https://form.jotform.com/251748102089054" class="btn">FREE ESTIMATES</a>
   </header>
 
-  <!-- Services -->
-  <section style="background-color: #fef7ef; padding: 60px 20px;">
-    <h2 style="text-align: center; font-size: 2em; color: #ff6600; text-shadow: 1px 1px black;">SERVICES</h2>
-    <div style="max-width: 1100px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 30px;">
-      <ul style="list-style: disc; padding-left: 20px;">
-        <li>Interior Demolition</li>
-        <li>Garage Cleanouts & Demo</li>
-        <li>Bathroom & Kitchen Tear Outs</li>
-        <li>Tile & Carpet Removal</li>
-      </ul>
-      <ul style="list-style: disc; padding-left: 20px;">
-        <li>Non-Structural Wall Removal</li>
-        <li>Shed & Patio Cover Demo</li>
-        <li>Junk Removal</li>
-        <li>Property Cleanouts</li>
-      </ul>
-    </div>
+  <!-- SERVICES SECTION -->
+  <section class="services">
+    <h2>SERVICES</h2>
+    <ul class="service-list">
+      <li>Interior Demolition</li>
+      <li>Garage Cleanouts & Demo</li>
+      <li>Bathroom & Kitchen Tear Outs</li>
+      <li>Tile & Carpet Removal</li>
+      <li>Non-Structural Wall Removal</li>
+      <li>Shed & Patio Cover Demo</li>
+      <li>Junk Removal</li>
+      <li>Property Cleanouts</li>
+    </ul>
 
-    <div style="display: flex; justify-content: center; gap: 50px; margin-top: 40px; flex-wrap: wrap;">
-      <div style="text-align: center;">
-        <img src="/assets/awning.jpg" alt="Awning Removal" style="width: 200px; height: auto;">
+    <div class="service-images">
+      <div class="service-box">
+        <img src="/assets/awning.jpg" alt="Awning Removal">
         <p>Awning Removal</p>
       </div>
-      <div style="text-align: center;">
-        <img src="/assets/water-mitigation.jpg" alt="Water Mitigation" style="width: 200px; height: auto;">
+      <div class="service-box">
+        <img src="/assets/water-mitigation.jpg" alt="Water Mitigation">
         <p>Water Mitigation</p>
       </div>
-      <div style="text-align: center;">
-        <img src="/assets/kitchen-demo.jpg" alt="Kitchen Demo" style="width: 200px; height: auto;">
+      <div class="service-box">
+        <img src="/assets/kitchen-demo.jpg" alt="Kitchen Demo">
         <p>Kitchen Demo</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer style="background-color: #1c1c1c; color: white; padding: 40px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
-    <div>
-      <img src="/assets/tdg-logo.png" alt="TDG Logo" style="height: 50px; margin-bottom: 10px;">
-      <p>
-        NEVADA<br>
-        License #: PLACEHOLDER<br>
-        Insured & Bonded<br>
-        Residential Demo Limit: $50,000
-      </p>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">
+      <img src="/assets/tdg-logo.png" alt="TDG Logo" class="footer-logo">
+      <p><strong>NEVADA</strong><br>
+      License #: PLACEHOLDER<br>
+      Insured & Bonded<br>
+      Residential Demo Limit: $50,000</p>
     </div>
 
-    <div style="text-align: center;">
-      <h3 style="margin-bottom: 10px;">TDG</h3>
-      <div style="display: flex; gap: 15px; justify-content: center;">
-        <img src="/assets/facebook.png" alt="Facebook" style="height: 24px;">
-        <img src="/assets/instagram.png" alt="Instagram" style="height: 24px;">
-        <img src="/assets/twitter.png" alt="Twitter" style="height: 24px;">
+    <div class="footer-center">
+      <h3>TDG</h3>
+      <div class="social-icons">
+        <img src="/assets/facebook.png" alt="Facebook">
+        <img src="/assets/instagram.png" alt="Instagram">
+        <img src="/assets/twitter.png" alt="Twitter">
       </div>
     </div>
 
-    <div>
-      <h3>OFFICE HOURS</h3>
-      <p>
-        Monday to Friday<br>
-        9:00 am to 5:00 pm<br>
-        Weekends by appointment
-      </p>
+    <div class="footer-right">
+      <h4>OFFICE HOURS</h4>
+      <p>Monday to Friday<br>9:00 am to 5:00 pm<br>Weekends by appointment</p>
     </div>
   </footer>
 
