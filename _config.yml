@@ -1,13 +1,2 @@
-remote_theme: mmistakes/minimal-mistakes
-
-collections:
-  pages:
-    output: true
-    permalink: /:path/
-
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
+title: Titan Demo Group
+theme: minima
