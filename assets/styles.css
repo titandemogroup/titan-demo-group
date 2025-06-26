@@ -1,0 +1,77 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f0ea;
+}
+.hero {
+  position: relative;
+  text-align: center;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+.hero-text {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: #ff6600;
+  text-align: left;
+}
+.logo {
+  width: 120px;
+}
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.services {
+  padding: 30px;
+}
+.services h2 {
+  text-align: center;
+}
+.services ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+}
+.services li {
+  margin: 10px 20px;
+  font-weight: bold;
+}
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.gallery div {
+  text-align: center;
+}
+.gallery img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+}
+footer {
+  background: #222;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+footer img {
+  width: 100px;
+}
+.socials img {
+  width: 24px;
+  margin: 0 5px;
+}
