@@ -1,0 +1,132 @@
+/* styles.css — Modern Clean White Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fefefe;
+  color: #333;
+}
+
+header {
+  background: url('../img/demo-header.jpg') center center/cover no-repeat;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-text {
+  background: rgba(255,255,255,0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 90%;
+}
+
+.header-text h1 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 2.5rem;
+  color: #C85103;
+  text-shadow: 1px 1px 0 #000;
+  margin: 0 0 1rem;
+}
+
+.header-text p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.header-text a.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #000;
+  background: white;
+  border: 2px solid #000;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+section.services {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.services h2 {
+  color: #C85103;
+  font-family: 'Archivo', sans-serif;
+  font-size: 2rem;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.services ul {
+  columns: 2;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.services ul li::before {
+  content: "•";
+  color: #C85103;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.image-card {
+  text-align: center;
+  max-width: 300px;
+}
+
+.image-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.image-card p {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+footer {
+  background: #f7f7f7;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-section {
+  margin: 1rem;
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+  color: #000;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
