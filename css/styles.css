@@ -146,12 +146,12 @@ header .tagline {
 
 .services ul li {
   position: relative;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* DARKER semi-transparent background */
   padding: 10px 15px 10px 35px;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 500;
-  color: #333;
+  color: #fff; /* white text */
   border: 2px solid #000;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   min-height: 60px;
@@ -167,7 +167,7 @@ header .tagline {
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.3rem;
-  color: #000;
+  color: #fff;
 }
 
 .services ul li:hover {
@@ -219,11 +219,11 @@ footer {
   height: auto;
   display: block;
   border-radius: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .footer-text {
-  padding: 15px 10px;
+  padding: 10px 10px;
 }
 
 .footer-section {
