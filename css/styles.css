@@ -1,140 +1,280 @@
-body {
-  font-family: sans-serif;
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
   color: #333;
+  background: #fff;
+  line-height: 1.6;
 }
 
-header {
-  padding: 20px 10px;
-  text-align: center;
+a {
+  color: #007BFF;
+  text-decoration: none;
 }
 
-.header-text img {
-  max-width: 180px;
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
   height: auto;
+  border-radius: 4px;
 }
 
-.header-text h1 {
-  font-size: 1.8em;
-  margin: 10px 0 5px 0;
+/* HEADER */
+header {
+  background: url('../img/demo-header.jpg') center center / cover no-repeat;
+  position: relative;
+  text-align: center;
+  padding: 130px 20px 80px;
+  color: #fff;
+  width: 100%;
 }
 
-.header-text p {
-  font-size: 1em;
-  margin: 5px 0;
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+.tdg-logo-top {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  max-width: 80px;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+header .tagline {
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+  margin: 0 0 20px 0;
+  line-height: 1.4;
 }
 
 .button {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #ff6600;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 12px 28px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #000;
   border-radius: 5px;
-  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  transition: all 0.3s ease;
+  margin: 20px auto 20px auto;
 }
 
 .button:hover {
-  background-color: #e55a00;
+  background: #333;
+  color: #fff;
 }
 
-.sticky-nav {
-  position: sticky;
-  top: 0;
-  background: white;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd;
-  z-index: 1000;
-}
-
-.sticky-nav a {
-  color: #000;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.sticky-nav a:hover {
-  color: #ff6600;
-}
-
-.services-section, .projects-section {
-  background-color: #f8f8f8;
-  padding: 20px 10px;
+/* SERVICES SECTION */
+.services {
+  position: relative;
+  padding: 40px 20px 30px 20px;
   text-align: center;
+  background: url('../img/tdg-las-vegas-bg.png') center center / cover no-repeat;
+  color: #fff;
+  width: 100%;
 }
 
-.services-section h2, .projects-section h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+.services::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
-.services-section ul {
+.services * {
+  position: relative;
+  z-index: 1;
+}
+
+.services h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+.services ul {
   list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
   padding: 0;
 }
 
-.services-section li {
-  margin: 5px 0;
-}
-
-.projects-section img {
-  width: 90%;
-  max-width: 500px;
-  display: block;
-  margin: 10px auto;
-  border-radius: 5px;
-}
-
-.project-caption {
-  text-align: center;
-  font-size: 0.95em;
+.services ul li {
+  position: relative;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 10px 15px 10px 35px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
   color: #333;
-  margin: 5px 0 15px 0;
+  border: 2px solid #000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-footer {
+.services ul li::before {
+  content: "•";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  color: #000;
+}
+
+.services ul li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+/* PROJECT GALLERY */
+.project-gallery {
+  padding: 40px 20px;
   text-align: center;
-  font-size: 0.9em;
-  color: #555;
-  padding: 15px 10px;
-  background: white;
+  width: 100%;
 }
 
-footer img {
-  max-width: 140px;
+.project-gallery h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+@media (min-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* FOOTER */
+footer {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+
+.footer-logo {
+  width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto 10px auto;
+  margin: 0 0 20px 0;
+  border-radius: 0;
 }
 
-footer h2 {
-  margin: 5px 0;
+.footer-section {
+  margin: 20px 0;
+  padding: 0 15px;
 }
 
-footer p {
-  margin: 5px 0;
+.footer-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #222;
 }
 
-footer a {
-  color: #ff6600;
-  text-decoration: none;
+.footer-section p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.social-icons {
+  margin-top: 12px;
 }
 
-footer div a {
+.social-icons a {
   margin: 0 10px;
   color: #333;
+  transition: color 0.3s ease;
 }
 
-footer div a:hover {
-  color: #ff6600;
+.social-icons a:hover {
+  color: #555;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #777;
+  padding: 0 10px 20px;
+}
+
+/* RESPONSIVE TEXT SCALING */
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  .services h2,
+  .project-gallery h2 {
+    font-size: 2rem;
+  }
+
+  .footer-section {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    text-align: left;
+    padding:  10px;
+  }
 }
