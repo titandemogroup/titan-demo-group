@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#D8CAB8" />
   <title>Titan Demo Group</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
+    body {
+      background-color: #D8CAB8;
+      margin: 0;
+      font-family: sans-serif;
+    }
     /* Carousel Styles */
     .carousel-container {
       position: relative;
@@ -63,16 +69,35 @@
 
     /* Header Text Styling */
     .header-content h1 {
-      color: #FF8C00; /* logo orange */
+      color: #FF8C00;
       font-weight: bold;
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, 
                    -1px 1px 0 #000, 1px 1px 0 #000;
     }
     .header-content .tagline {
-      color: #FFA64D; /* off-orange */
+      color: #FFA64D;
       font-weight: 600;
       text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, 
                    -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    /* Branded Button Styling */
+    .button {
+      background: #fff;
+      color: #000;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+      border: 3px solid #000;
+      font-weight: bold;
+      box-shadow: 0 0 5px rgba(0,0,0,0.3);
+      transition: background 0.3s, color 0.3s;
+    }
+    .button:hover {
+      background: #000;
+      color: #fff;
     }
   </style>
 </head>
@@ -95,16 +120,17 @@
   <main>
     <section class="services">
       <h2>OUR SERVICES</h2>
-      <ul>
-        <li>Interior Demolition</li>
-        <li>Garage Cleanouts & Demo</li>
-        <li>Bathroom & Kitchen Tear Outs</li>
-        <li>Tile & Carpet Removal</li>
-        <li>Non-Structural Wall Removal</li>
-        <li>Shed & Patio Cover Demo</li>
-        <li>Junk Removal</li>
-        <li>Property Cleanouts</li>
-      </ul>
+<ul>
+  <li>INTERIOR DEMOLITION</li>
+  <li>GARAGE CLEANOUTS & DEMO</li>
+  <li>BATHROOM & KITCHEN TEAR OUTS</li>
+  <li>TILE & CARPET REMOVAL</li>
+  <li>NON-STRUCTURAL WALL REMOVAL</li>
+  <li>SHED & PATIO COVER DEMO</li>
+  <li>JUNK REMOVAL</li>
+  <li>PROPERTY CLEANOUTS</li>
+</ul>
+
       <a href="https://form.jotform.com/251748102089054" class="button">FREE ESTIMATES</a>
     </section>
 
