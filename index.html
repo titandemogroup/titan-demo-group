@@ -4,9 +4,77 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Titan Demo Group</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Carousel Styles */
+    .carousel-container {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel-track img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 50%;
+      z-index: 10;
+    }
+    .carousel-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+    .prev { left: 15px; }
+    .next { right: 15px; }
+
+    /* Sandy background adjustments */
+    .project-gallery {
+      background-color: #D8CAB8;
+      padding: 40px 20px;
+    }
+    footer {
+      background-color: #D8CAB8;
+      color: #000;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a, footer h3, footer p {
+      color: #000;
+    }
+    footer .social-icons a {
+      color: #000;
+    }
+
+    /* Header Text Styling */
+    .header-content h1 {
+      color: #FF8C00; /* logo orange */
+      font-weight: bold;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, 
+                   -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .header-content .tagline {
+      color: #FFA64D; /* off-orange */
+      font-weight: 600;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, 
+                   -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+  </style>
 </head>
 <body>
 
@@ -40,13 +108,19 @@
       <a href="https://form.jotform.com/251748102089054" class="button">FREE ESTIMATES</a>
     </section>
 
-    <!-- Project Showcase -->
+    <!-- Project Showcase Carousel -->
     <section class="project-gallery">
       <h2>PROJECT SHOWCASE</h2>
-      <div class="gallery">
-        <img src="img/awning.jpg" alt="Damaged awning ready for demo">
-        <img src="img/kitchen.jpg" alt="Kitchen demolition in progress">
-        <img src="img/water.jpg" alt="Ceiling removal and water mitigation">
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <img src="img/IMG_3692.jpg" alt="Project 1">
+          <img src="img/IMG_3698.jpg" alt="Project 2">
+          <img src="img/IMG_8221.jpg" alt="Project 3">
+          <img src="img/IMG_8226.jpg" alt="Project 4">
+          <img src="img/IMG_8978.jpg" alt="Project 5">
+        </div>
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
       </div>
     </section>
   </main>
@@ -54,7 +128,6 @@
   <!-- Footer -->
   <footer>
     <img src="img/footer-tdg-usa-bg.png" alt="Titan Demo Group USA Logo" class="footer-logo" />
-
     <div class="footer-text">
       <div class="footer-section">
         <h3>NEVADA</h3>
@@ -62,13 +135,11 @@
         Insured & Bonded<br>
         Residential Demo Limit: $50,000</p>
       </div>
-
       <div class="footer-section">
         <h3>OFFICE HOURS</h3>
         <p>Mon - Fri: 9:00 AM - 5:00 PM<br>
         Weekends by appointment</p>
       </div>
-
       <div class="footer-section">
         <h3>CONTACT US</h3>
         <p>Office: <a href="tel:7023449492">(702) 344-9492</a><br>
@@ -80,9 +151,41 @@
         </div>
       </div>
     </div>
-
     <p class="copyright">© 2025 Titan Demo Group. All Rights Reserved.</p>
   </footer>
+
+  <!-- Carousel Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const track = document.querySelector('.carousel-track');
+      const prevBtn = document.querySelector('.prev');
+      const nextBtn = document.querySelector('.next');
+      const slides = document.querySelectorAll('.carousel-track img');
+      let index = 0;
+
+      function updateCarousel() {
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      prevBtn.addEventListener('click', () => {
+        index = (index === 0) ? slides.length - 1 : index - 1;
+        updateCarousel();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        index = (index === slides.length - 1) ? 0 : index + 1;
+        updateCarousel();
+      });
+
+      let startX;
+      track.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+      track.addEventListener('touchend', e => {
+        let endX = e.changedTouches[0].clientX;
+        if (startX - endX > 50) nextBtn.click();
+        if (endX - startX > 50) prevBtn.click();
+      });
+    });
+  </script>
 
 </body>
 </html>
