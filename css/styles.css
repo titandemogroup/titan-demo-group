@@ -1,4 +1,3 @@
-
 body {
   font-family: sans-serif;
   margin: 0;
@@ -8,39 +7,135 @@ body {
   background-color: #fff;
 }
 
-header { padding: 20px 10px; text-align: center; }
-.header-text img { max-width: 180px; height: auto; }
-.header-text h1 { font-size: 1.8em; margin: 10px 0 5px 0; }
-.header-text p { font-size: 1em; margin: 5px 0; }
-.button { display: inline-block; padding: 12px 24px; background-color: #ff6600; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 10px; }
-.button:hover { background-color: #e55a00; }
+header {
+  padding: 20px 10px;
+  text-align: center;
+}
 
-.sticky-nav { position: sticky; top: 0; background: white; display: flex; justify-content: center; gap: 20px; padding: 10px 0; border-bottom: 1px solid #ddd; z-index: 1000; }
-.sticky-nav a { color: #000; text-decoration: none; font-weight: 600; }
-.sticky-nav a:hover { color: #ff6600; }
+.header-text img {
+  max-width: 180px;
+  height: auto;
+}
 
-.services-section, .projects-section { background-color: #f8f8f8; padding: 20px 10px; text-align: center; }
-.services-section h2, .projects-section h2 { font-size: 1.5em; margin-bottom: 10px; }
-.services-section ul { list-style: none; padding: 0; }
-.services-section li { margin: 5px 0; }
+.header-text h1 {
+  font-size: 1.8em;
+  margin: 10px 0 5px 0;
+}
 
-.project-caption { text-align: center; font-size: 0.95em; color: #333; margin: 5px 0 15px 0; }
+.header-text p {
+  font-size: 1em;
+  margin: 5px 0;
+}
 
-.carousel { position: relative; max-width: 500px; margin: 0 auto; }
-.carousel-track-container { overflow: hidden; }
-.carousel-track { display: flex; transition: transform 0.3s ease-in-out; padding: 0; margin: 0; }
-.carousel-slide { min-width: 100%; box-sizing: border-box; list-style: none; text-align: center; }
-.carousel-slide img { width: 100%; border-radius: 5px; }
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+}
 
-.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); border: none; color: white; font-size: 2rem; cursor: pointer; padding: 5px 10px; border-radius: 50%; z-index: 10; }
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
+.button:hover {
+  background-color: #e55a00;
+}
 
-footer { text-align: center; font-size: 0.9em; color: #555; padding: 15px 10px; background: white; }
-footer img { max-width: 140px; height: auto; display: block; margin: 0 auto 10px auto; }
-footer h2 { margin: 5px 0; }
-footer p { margin: 5px 0; }
-footer a { color: #ff6600; text-decoration: none; }
-footer a:hover { text-decoration: underline; }
-footer div a { margin: 0 10px; color: #333; }
-footer div a:hover { color: #ff6600; }
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.sticky-nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sticky-nav a:hover {
+  color: #ff6600;
+}
+
+.services-section, .projects-section {
+  background-color: #f8f8f8;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.services-section h2, .projects-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.services-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-section li {
+  margin: 5px 0;
+}
+
+.projects-section img {
+  width: 90%;
+  max-width: 500px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.project-caption {
+  text-align: center;
+  font-size: 0.95em;
+  color: #333;
+  margin: 5px 0 15px 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555;
+  padding: 15px 10px;
+  background: white;
+}
+
+footer img {
+  max-width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+footer h2 {
+  margin: 5px 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer div a {
+  margin: 0 10px;
+  color: #333;
+}
+
+footer div a:hover {
+  color: #ff6600;
+}
